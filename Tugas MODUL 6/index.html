@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>FORM REGISTRASI</h2>
+      <div id="page1">
+        <form id="registrationFormPage1" onsubmit="return goToPageTwo()">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" />
+            <span id="nameError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" />
+            <span id="usernameError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <span id="emailError" class="error"></span>
+          </div>
+          <hr />
+          <button class="lanjutkan" type="submit">Lanjutkan</button>
+        </form>
+      </div>
+      <div id="page2" style="display: none">
+        <form id="registrationFormPage2" onsubmit="return showSuccessMessage()">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" />
+            <span id="passwordError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10,14}"
+              title="Nomor Telepon harus diantara 10 - 14 digit"
+            />
+            <span id="phoneError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" name="gender">
+              <option value="" hidden>Pilih Jenis Kelamin</option>
+              <option value="lakilaki">Laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+            <span id="genderError" class="error"></span>
+          </div>
+          <div class="form-group">
+            <label for="website">Alamat Website</label>
+            <input type="text" id="website" name="website" />
+          </div>
+          <hr />
+          <button class="kembali" type="button" onclick="goToPageOne()">
+            Kembali
+          </button>
+          <button type="submit">Registrasi</button>
+        </form>
+      </div>
+      <div id="successMessage" style="display: none">
+        <div class="akhir">
+          <h3>Registrasi Berhasil</h3>
+          <p>Terima kasih telah mendaftar!</p>
+        </div>
+        <button class="selesai" onclick="registerAgain()">Selesai</button>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+body {
+  font-family: 'Arial';
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+  background: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px #6f7d99;
+}
+
+.container {
+  padding-bottom: 70px;
+}
+
+.container h2 {
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+h2 {
+  text-shadow: 3px 3px 0px #474747;
+  padding-bottom: 15px;
+  font-size: 35px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 7px;
+  padding-left: 1.5px;
+  text-shadow: 2px 2px 0px #474747;
+  font-size: 22px;
+}
+
+#successMessage .akhir {
+  color: #ffffff;
+  padding-bottom: 15px;
+  background-color: #198754;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.selesai {
+  margin-top: 15px;
+}
+
+.kembali {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 3.5px solid rgb(35, 35, 35);
+  border-radius: 500px;
+  width: 10%;
+  margin-bottom: 30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+select {
+  font-size: 16px;
+  color: #646464;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  box-sizing: border-box;
+  height: 50px;
+  appearance: none;
+}
+
+.select-wrapper::after {
+  content: '\25BC';
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2a2a2a;
+  color: white;
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: #000000;
+}
+
+.error {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-shadow: 0px 0px 1px #000000;
+}
